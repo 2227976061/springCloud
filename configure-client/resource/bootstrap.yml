@@ -1,0 +1,21 @@
+server:
+  port: 3200
+
+spring: 
+  application:
+    name: configureClient
+  cloud:
+    config:
+      uri: http://192.168.10.16:3100 
+      label: master
+      profile: dev
+      name: config
+      discovery:
+        enabled: true
+        service-id: configServer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+      
+
