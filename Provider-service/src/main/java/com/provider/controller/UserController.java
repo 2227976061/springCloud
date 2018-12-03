@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.provider.Service.HelloService;
+
 @RestController
-public class UserController {
+public class UserController  {
 
 	public Logger log = LoggerFactory.getLogger(UserController.class);
 	
@@ -25,4 +27,6 @@ public class UserController {
 	 
 		return "this is Provider工程";
 	}
+	
+	
 }

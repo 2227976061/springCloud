@@ -17,13 +17,12 @@ public class ZuulUtilFilter extends ZuulFilter {
 	
     private static Logger log = LoggerFactory.getLogger(ZuulUtilFilter.class);
 
-	@Override
 	public boolean shouldFilter() {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	@Override
+//	@Override
 	public Object run() {
 		RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();

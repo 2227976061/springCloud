@@ -10,6 +10,8 @@ eureka:
       # 报告异常：com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
       defaultZone: http://localhost:8888/eureka/
       
-
+feign:
+  hystrix:
+    enabled: true
     
 
